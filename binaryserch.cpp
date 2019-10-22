@@ -6,16 +6,16 @@ using namespace std;
     int data[8] = {30,35,40,45,50,60,65,70};
     int key[8] = {1,2,3,4,5,6,7,8};
     int  awal = 0;
-	int ahir = 8;
-	int tengah = (awal+ahir)/2;
+    int ahir = 8;
+    int tengah = (awal+ahir)/2;
     int i,k;
     int cari;
     bool ketemu = false;
 
 int nilai(){
-//		 system("color A");
+//system("color A");
 	
-		        // tampilkan baris data
+	// tampilkan baris data
     	cout << "Data Awal = [";
         for (i = 0; i < 8; i++)
         {
@@ -28,6 +28,7 @@ int nilai(){
 
 int kunci(){
 //	system("color B");
+//menampilkan key dari data
 	cout <<endl;
 	cout << "key       = [";
 	for (k = 0; k < 8; k++){
@@ -90,7 +91,7 @@ int main() {
  
 
 
-//    return 0;
+   return 0;
 }
 
 
