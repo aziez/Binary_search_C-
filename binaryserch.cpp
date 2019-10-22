@@ -6,55 +6,54 @@ using namespace std;
     int data[8] = {30,35,40,45,50,60,65,70};
     int key[8] = {1,2,3,4,5,6,7,8};
     int  awal = 0;
-    int ahir = 8;
-    int tengah = (awal+ahir)/2;
+	int ahir = 8;
+	int tengah = (awal+ahir)/2;
     int i,k;
     int cari;
     bool ketemu = false;
 
 int nilai(){
-//system("color A");
+//		 system("color A");
 	
-	// tampilkan baris data
-    	cout << "Data Awal = [";
+		        // tampilkan baris data
+    	cout << "| Data Awal = [";
         for (i = 0; i < 8; i++)
         {
            
             cout << data[i] <<",";
         }
-        cout << "]";
+        cout << "] |";
 }
 
 
 int kunci(){
 //	system("color B");
-//menampilkan key dari data
 	cout <<endl;
-	cout << "key       = [";
+	cout << "| key       = [";
 	for (k = 0; k < 8; k++){
 		cout << key[k]<<" ,";
 	}
-	cout << "]";
-	cout << endl<<"---------------------------------------";
+	cout << "] |";
+	cout << endl<<"------------------------------------------";
 };
 
 
 int pencarian(){
-	system("COLOR 24");
+//	system("COLOR 24");
 	cout <<endl;
-	cout << "Masukkan Data Angka yang di cari="<<endl;
+	cout << "Masukkan Data Angka yang di cari="<<endl<<"---"<<endl;
 	cin >> cari;
-	
+		
 	while(ketemu == false && awal <= ahir){
 		tengah = (awal+ahir)/2;
 		
-		if(data[tengah] == cari){
+		if( cari == data[tengah]){
 			ketemu = true;
 			break;
 			
 			
 		}
-		else if(data[tengah] < cari){
+		else if(cari > data[tengah]){
 			awal = tengah + 1;
 		}
 		else{
@@ -75,12 +74,12 @@ int pencarian(){
 
 int main() {
     	
-    	cout << "----------------------------"<<endl;
-    	cout << "|Nama  : Muhamad Abdul Aziz|"<<endl;
-    	cout << "|NIM   :    181011400044   |"<<endl;
-    	cout << "|Kelas :     03TPLE001     |"<<endl;
-    	cout << "|Tugas : Binary Searching  |"<<endl;
-    	cout << "----------------------------"<<endl;
+    	cout << "------------------------------------------"<<endl;
+    	cout << "|       Nama  : Muhamad Abdul Aziz       |"<<endl;
+    	cout << "|       NIM   :    181011400044          |"<<endl;
+    	cout << "|       Kelas :     03TPLE001            |"<<endl;
+    	cout << "|       Tugas : Binary Searching         |"<<endl;
+    	cout << "------------------------------------------"<<endl;
     	 
     	 nilai();
     	 
@@ -91,7 +90,7 @@ int main() {
  
 
 
-   return 0;
-}
+    return 0;
 
+}
 
