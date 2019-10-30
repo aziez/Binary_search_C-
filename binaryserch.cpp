@@ -80,7 +80,7 @@ int main() {
     	cout << "|       Nama  : Muhamad Abdul Aziz       |"<<endl;
     	cout << "|       NIM   :    181011400044          |"<<endl;
     	cout << "|       Kelas :     03TPLE001            |"<<endl;
-    	cout << "|       Tugas : Binary Searching         |"<<endl;
+    	cout << "|       Tugas : Interpolasi Search       |"<<endl;
     	cout << "------------------------------------------"<<endl;
     	 
     	 nilai();
