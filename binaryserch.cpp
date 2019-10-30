@@ -1,5 +1,3 @@
- 
-
 #include <iostream>
 using namespace std;
 
@@ -11,6 +9,7 @@ using namespace std;
     int i,k;
     int cari;
     bool ketemu = false;
+    int proses = 0;
 
 int nilai(){
 //		 system("color A");
@@ -43,8 +42,10 @@ int pencarian(){
 	cout <<endl;
 	cout << "Masukkan Data Angka yang di cari="<<endl<<"---"<<endl;
 	cin >> cari;
+	
 		
 	while(ketemu == false && awal <= ahir){
+	    proses++;
 		tengah = (awal+ahir)/2;
 		
 		if( cari == data[tengah]){
@@ -63,6 +64,7 @@ int pencarian(){
 	
 	if (ketemu == true){
 		cout << "Angka DI Temukan di key ke = "<<tengah+1<<endl;
+		cout << "Proses Pencarian Sebanyak = " <<proses<<endl;
 	}else{
 		cout << "Angka Tidak Ada !!!";
 	}
@@ -93,4 +95,3 @@ int main() {
     return 0;
 
 }
-
